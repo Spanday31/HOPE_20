@@ -124,3 +124,4 @@ def main_app_content():
             pdf.output(f.name)
             with open(f.name, "rb") as pdf_file:
                 st.download_button(label="Download PDF", data=pdf_file, file_name="smart2_risk_summary.pdf", mime="application/pdf")
+                main_app_content()
